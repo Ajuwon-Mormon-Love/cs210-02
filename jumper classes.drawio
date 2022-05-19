@@ -1,30 +1,30 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T22:59:18.604Z" agent="5.0 (Windows)" etag="D-luAln_y9YUdc_DmfPw" version="18.0.7" type="github">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="815" dy="479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
-      <root>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="ljWQs0ftOi78ZdAStHtR-5" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="40" y="40" width="180" height="280" as="geometry" />
-        </mxCell>
-        <mxCell id="ljWQs0ftOi78ZdAStHtR-0" value="Dictionary&lt;br&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fontSize=11;fontColor=#000000;fillColor=#C7DBFF;whiteSpace=wrap;spacing=6;html=1;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" vertex="1" parent="ljWQs0ftOi78ZdAStHtR-5">
-          <mxGeometry width="180" height="190" as="geometry">
-            <mxRectangle x="20" y="10" width="90" height="26" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ljWQs0ftOi78ZdAStHtR-1" value="&lt;div style=&quot;font-size: 9px;&quot;&gt;- field: type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;- field: type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;- field: type&lt;br style=&quot;font-size: 9px;&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontSize=9;fontColor=#000000;whiteSpace=wrap;html=1;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" vertex="1" parent="ljWQs0ftOi78ZdAStHtR-0">
-          <mxGeometry y="30" width="180" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ljWQs0ftOi78ZdAStHtR-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;fontSize=11;fontColor=#6666FF;" vertex="1" parent="ljWQs0ftOi78ZdAStHtR-0">
-          <mxGeometry y="100" width="180" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="ljWQs0ftOi78ZdAStHtR-3" value="&lt;div style=&quot;font-size: 9px;&quot;&gt;+ method(type): type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;+ method(type): type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;+ method(type): type&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontSize=9;fontColor=#000000;whiteSpace=wrap;html=1;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" vertex="1" parent="ljWQs0ftOi78ZdAStHtR-0">
-          <mxGeometry y="108" width="180" height="82" as="geometry" />
-        </mxCell>
-        <mxCell id="ljWQs0ftOi78ZdAStHtR-4" value="&lt;div style=&quot;font-size: 8px;&quot;&gt;Maintains a list of words to be picked from for guessing.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;labelBackgroundColor=none;fontSize=8;fontColor=#000000;whiteSpace=wrap;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" vertex="1" parent="ljWQs0ftOi78ZdAStHtR-5">
-          <mxGeometry y="200" width="180" height="80" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+        <mxGraphModel dx="820" dy="340" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="ljWQs0ftOi78ZdAStHtR-5" value="" style="group" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1" connectable="0">
+                    <mxGeometry x="90" y="30" width="180" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="ljWQs0ftOi78ZdAStHtR-0" value="Dictionary&lt;br&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fontSize=11;fontColor=#000000;fillColor=#C7DBFF;whiteSpace=wrap;spacing=6;html=1;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" parent="ljWQs0ftOi78ZdAStHtR-5" vertex="1">
+                    <mxGeometry width="180" height="190" as="geometry">
+                        <mxRectangle x="20" y="10" width="90" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ljWQs0ftOi78ZdAStHtR-1" value="&lt;div style=&quot;font-size: 9px;&quot;&gt;- field: type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;- field: type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;- field: type&lt;br style=&quot;font-size: 9px;&quot;&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontSize=9;fontColor=#000000;whiteSpace=wrap;html=1;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" parent="ljWQs0ftOi78ZdAStHtR-0" vertex="1">
+                    <mxGeometry y="30" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ljWQs0ftOi78ZdAStHtR-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;fontSize=11;fontColor=#6666FF;" parent="ljWQs0ftOi78ZdAStHtR-0" vertex="1">
+                    <mxGeometry y="100" width="180" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="ljWQs0ftOi78ZdAStHtR-3" value="&lt;div style=&quot;font-size: 9px;&quot;&gt;+ method(type): type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;+ method(type): type&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot;&gt;+ method(type): type&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontSize=9;fontColor=#000000;whiteSpace=wrap;html=1;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" parent="ljWQs0ftOi78ZdAStHtR-0" vertex="1">
+                    <mxGeometry y="108" width="180" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="ljWQs0ftOi78ZdAStHtR-4" value="&lt;div style=&quot;font-size: 8px;&quot;&gt;Maintains a list of words to be picked from for guessing.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;labelBackgroundColor=none;fontSize=8;fontColor=#000000;whiteSpace=wrap;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;" parent="ljWQs0ftOi78ZdAStHtR-5" vertex="1">
+                    <mxGeometry y="200" width="180" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
