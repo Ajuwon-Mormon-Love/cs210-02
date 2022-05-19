@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+########## End of Python Definitions #############
+
+### Draw.io backup files
+*.drawio.bkp
