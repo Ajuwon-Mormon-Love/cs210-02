@@ -8,7 +8,7 @@
                     <mxGeometry x="40" y="20" width="180" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="ljWQs0ftOi78ZdAStHtR-0" value="Dictionary&lt;br&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fontSize=11;whiteSpace=wrap;spacing=6;html=1;textDirection=ltr;labelPosition=center;verticalLabelPosition=middle;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;fillColor=#BC6C25;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="ljWQs0ftOi78ZdAStHtR-5" vertex="1">
-                    <mxGeometry width="180" height="167.56613756613757" as="geometry">
+                    <mxGeometry width="180" height="180.00349206349205" as="geometry">
                         <mxRectangle x="20" y="10" width="90" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
@@ -18,11 +18,11 @@
                 <mxCell id="ljWQs0ftOi78ZdAStHtR-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;fontSize=11;strokeColor=#DDA15E;fontColor=#FEFAE0;" parent="ljWQs0ftOi78ZdAStHtR-0" vertex="1">
                     <mxGeometry y="90.18518518518519" width="180" height="6.878306878306878" as="geometry"/>
                 </mxCell>
-                <mxCell id="ljWQs0ftOi78ZdAStHtR-3" value="&lt;div style=&quot;font-size: 9px&quot;&gt;+ check_guess(player)&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;+ pick_word()&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;- load_word_list()&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;+ display_hidden_word()&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;+ get_revealed_word(): str&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontSize=9;whiteSpace=wrap;html=1;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;fontColor=#FEFAE0;" parent="ljWQs0ftOi78ZdAStHtR-0" vertex="1">
-                    <mxGeometry y="97.06349206349206" width="180" height="70.50264550264549" as="geometry"/>
+                <mxCell id="ljWQs0ftOi78ZdAStHtR-3" value="&lt;div style=&quot;font-size: 9px&quot;&gt;+ check_guess(player): boolean&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;+ pick_word()&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;- load_word_list()&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;+ display_hidden_word()&lt;/div&gt;&lt;div style=&quot;font-size: 9px&quot;&gt;+ get_revealed_word(): str&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=none;fontSize=9;whiteSpace=wrap;html=1;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;fontColor=#FEFAE0;" parent="ljWQs0ftOi78ZdAStHtR-0" vertex="1">
+                    <mxGeometry y="97.06349206349206" width="180" height="82.94" as="geometry"/>
                 </mxCell>
                 <mxCell id="ljWQs0ftOi78ZdAStHtR-4" value="&lt;div style=&quot;font-size: 8px;&quot;&gt;Maintains a list of words to be picked from for guessing. Reports when correct or incorrect letters are guessed. Report when all letters are guessed, (or word is guessed.) Generates string of revealed letters&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;labelBackgroundColor=none;fontSize=8;whiteSpace=wrap;fontFamily=Source Code Pro;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DSource%2BCode%2BPro;strokeWidth=0.5;spacing=0;spacingLeft=6;spacingRight=6;fontColor=#FEFAE0;" parent="ljWQs0ftOi78ZdAStHtR-5" vertex="1">
-                    <mxGeometry y="171.96296296296296" width="180" height="78.03703703703704" as="geometry"/>
+                    <mxGeometry y="190.00296296296295" width="180" height="78.03703703703704" as="geometry"/>
                 </mxCell>
                 <mxCell id="WdZ8lccHcP2vV0HrdDDT-0" value="" style="group;fillStyle=solid;spacing=4;fontColor=#FEFAE0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1" connectable="0">
                     <mxGeometry x="240" y="20" width="180" height="240" as="geometry"/>
