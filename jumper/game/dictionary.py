@@ -78,10 +78,9 @@ class Dictionary:
             'choose',
         ]
 
-        # cwd = os.getcwd()
-        # with open(f"{cwd}/jumper/data/lexicon.txt") as word_file:
+        # with open(f"jumper/data/lexicon.txt") as word_file:
         for word in word_file:
-            self._word_list.append(word)
+            self._word_list.append(word.replace('\n',''))
 
 
     def pick_word(self):
@@ -171,17 +170,3 @@ class Dictionary:
         self._revealed_word = new_str
 
         return number_matches
-
-
-
-
-
-
-
-
-
-
-
-
-
-
