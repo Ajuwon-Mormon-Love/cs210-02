@@ -1,5 +1,6 @@
 import random
 import re
+# import os
 
 class Dictionary:
     """A dictionary of words.
@@ -54,9 +55,8 @@ class Dictionary:
             'choose',
         ]
 
-        ## The following is a loop that would be employed if reading a text file. 
-        ## This will make the transition easy to using larger data.
-        # with open("lexicon.txt") as word_file:
+        # cwd = os.getcwd()
+        # with open(f"{cwd}/jumper/data/lexicon.txt") as word_file:
         for word in word_file:
             self._word_list.append(word)
 
@@ -119,9 +119,9 @@ class Dictionary:
         # either in the Terminal class or the Player class.
         guess = player.read_guess().lower()[0] 
         
-        # Loop through each letter of the mystery word.
-        #   With each letter
-        #   Compare it to the guess, case-insensitive
+        # Make i an index to loop through each letter of the mystery word.
+        #   With each letter as indexed by i
+        #   Compare it to the player's guess, case-insensitive
         #   If it IS NOT a match, set the corresponding letter in the 
         #       revealed word to itself (could be either a _ or an already guessed letter) 
         #   If it IS a match, set the corresponding letter in the
@@ -144,8 +144,6 @@ class Dictionary:
         self._revealed_word = new_str
         # Return whether the guess was successful or not.
         return correct_guess
-
-
 
 
 
