@@ -101,17 +101,18 @@ class Dictionary:
         self._revealed_word = re.sub('[a-zA-Z]','_',self._mystery_word)
 
 
-    def display_mystery_word(self):
-        """Displays the hidden word, usually at the end of the game if the
+    def display_mystery_word(self, terminal):
+        """Returns the hidden word, usually at the end of the game if the
         player was unable to guess it.
 
         Parameters:
             self (Dictionary): An instance of Dictionary.
+            terminal (Terminal): An instance of Terminal.
             
         Returns: 
             None
         """
-        print(f"The mystery word is: {self._mystery_word}.")
+        terminal.write_text(f"The mystery word is: {self._mystery_word}.")
 
 
     def get_revealed_word(self):
