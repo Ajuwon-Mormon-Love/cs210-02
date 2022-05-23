@@ -138,8 +138,8 @@ class Dictionary:
         Returns: 
             boolean - True if all letters have been revealed, False if not 
         """
-        find_result = self._revealed_word.find('_')
-        return find_result == -1
+        find_result = self._revealed_word == self._mystery_word
+        return find_result
 
 
     def check_guess(self, player):
