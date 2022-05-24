@@ -128,9 +128,8 @@ class Dictionary:
 
 
     def is_word_complete(self):
-        """Determine if all of the letters in the word have been guessed. Looks at the
-        _revealed_word to see if any blanks (_) are left. If there are none, find() 
-        returns a -1 which we can check for.
+        """Determine if all of the letters in the word have been guessed. To do this we simply see
+        if the the letters are revealed to the point that they match the mystery word. 
 
         Parameters:
             self (Dictionary): An instance of Dictionary.
