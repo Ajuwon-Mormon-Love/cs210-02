@@ -91,6 +91,6 @@ class Director:
             self (Director): an instance of Director.
         """
         self._skydiver.draw_figure()
-        self._term.write_text(self._dictionary.get_revealed_word)
+        self._term.write_text(self._dictionary.get_revealed_word())
 
         
