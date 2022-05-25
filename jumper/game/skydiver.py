@@ -59,5 +59,3 @@ class Skydiver:
             return True
         else:
             return False
-
-    
