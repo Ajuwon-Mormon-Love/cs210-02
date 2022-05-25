@@ -14,34 +14,47 @@ class Dictionary:
         _revealed_letters (str): The letters guessed that are in the word.
     """
     def __init__(self):
-        # self._word_list = ['boy', 'mat', 'pen']
-        self._word_list = ['boy']
-        # self._mystery_word = self._word_list[random.randint(0, 2)]
-        self._mystery_word = self._word_list[0]
+        self._word_list = ['boy', 'mat', 'pen']
+        # self._word_list = ['boy']
+        self._mystery_word = self._word_list[random.randint(0, 2)]
+        # self._mystery_word = self._word_list[0]
         self._revealed_letters = ""
-        self._evaluation = False
+        self._evaluation = True
         self._current_letter = ""
         self._guessed_letters = []
+        self._correct_letters = []
         self._terminal_service = TerminalService()
 
 
-    def evaluate_guess(self, guess):
+    def _evaluate_guess(self, guess):
         self._current_letter = guess
+
+        if guess not in self._guessed_letters:
+            self._guessed_letters.append(guess)
 
         if guess not in self._mystery_word:
             self._evaluation = False
         else:
+            if guess not in self._correct_letters:
+                self._correct_letters.append(guess)
+
             self._evaluation = True
 
 
-    def update_letters(self, guess):
+    def _update_letters(self, guess):
         blank = "_"
-
-        self._guessed_letters.append(guess)
+        ending = " "
 
         for letter in self._mystery_word:
             if letter in self._guessed_letters:
-                self._terminal_service.write_text(letter)
+                self._terminal_service.write_text(letter, ending)
             else:
-                self._terminal_service.write_text(blank)
+                self._terminal_service.write_text(blank, ending)
+
+        self._terminal_service.write_text("")
+
+    def _is_game_won(self):
+        if set(self._correct_letters) == set(self._mystery_word):
+            return True
+
 

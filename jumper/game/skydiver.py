@@ -29,33 +29,32 @@ class Skydiver:
             '^^^^^'
         ]
 
-    def draw_figure(self):
+    def _draw_figure(self):
         for x in self.figure:
             self._terminal_service.write_text(x)
 
 
-    def check_status(self, evaluation):
-        evaluation = evaluation
-        
+    def _check_status(self, evaluation):        
         if evaluation == True:
             return
         else:
-            self.is_dead = self.delete_line()
+            self.is_dead = self._delete_line()
             
 
-    def delete_line(self):
-        if self.index < 4:
+    def _delete_line(self):
+        if self.index < 3:
                 self.figure[self.index] = '     '
                 self.is_dead = False
         else:
-            self.figure[self.index] = '  x  '
+            self.figure[self.index] = '     '
+            self.figure[self.index + 1] = '  x  '
             self.is_dead = True
             return self.is_dead
 
         self.index += 1
 
 
-    def is_dead_status(self):
+    def _is_dead_status(self):
         if self.is_dead == True:
             return True
         else:
