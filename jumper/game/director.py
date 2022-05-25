@@ -80,8 +80,9 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
-        self._dictionary.check_guess(self._player)
-        self._is_playing = self._dictionary.is_word_complete() or self._skydiver.is_dead()
+        if not self._dictionary.check_guess(self._player):
+            self._skydiver.remove_piece()
+        self._is_playing = not (self._dictionary.is_word_complete() or self._skydiver.is_dead())
         
 
     def _do_outputs(self):
