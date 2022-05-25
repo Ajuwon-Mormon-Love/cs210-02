@@ -1,6 +1,6 @@
 import random
 import re
-# import os
+import os
 
 class Dictionary:
     """A dictionary of words which picks a random mystery word and evaluates letter guesses 
@@ -64,7 +64,7 @@ class Dictionary:
         Returns: 
             None
         """
-        # Open a file maybe later, but for now we will just define 10 words.
+        # Default word list if there is no lexicon.txt.
         word_file = [
             'engagement',
             'cluster',
@@ -78,9 +78,14 @@ class Dictionary:
             'choose',
         ]
 
-        # with open(f"jumper/data/lexicon.txt") as word_file:
-        for word in word_file:
-            self._word_list.append(word.replace('\n',''))
+        lexicon_path = "jumper/data/lexicon.txt"
+        if os.path.exists(lexicon_path):
+            with open(lexicon_path) as word_file:
+                for word in word_file:
+                    self._word_list.append(word.replace('\n',''))
+        else:
+            for word in word_file:
+                self._word_list.append(word.replace('\n',''))
 
 
     def pick_word(self):
