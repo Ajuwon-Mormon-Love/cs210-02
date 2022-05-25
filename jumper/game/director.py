@@ -58,11 +58,15 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
+        self._do_outputs()
+        self._term.write_text('')
         if self._dictionary.is_word_complete():
             self._term.write_text("Congratulations! You saved the skydiver!")
         if self._skydiver.is_dead():
             self._term.write_text("Oh no! The skydiver lost his parachute and didn't survive.")
             self._dictionary.display_mystery_word(self._term)
+        self._term.write_text('')
+        
     
 
     def _get_inputs(self):
@@ -91,7 +95,7 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
-        self._skydiver.draw_figure()
+        self._skydiver.draw_figure(self._term)
         self._term.write_text(self._dictionary.get_revealed_word())
 
         

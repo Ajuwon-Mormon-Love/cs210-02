@@ -1,5 +1,3 @@
-from game.terminal_service import TerminalService
-
 class Skydiver:
     """The person in a parachute. 
     
@@ -27,7 +25,6 @@ class Skydiver:
         """
         self._is_dead_status = False
         self._index = 0
-        self._terminal_service = TerminalService()
         self._figure = [
             ' ___ ',
             '/___\\',
@@ -40,14 +37,14 @@ class Skydiver:
             '^^^^^'
         ]
 
-    def draw_figure(self):
+    def draw_figure(self, term):
         """Draws the current state of the skydiver figure.
         
         Args: 
             self (Skydiver): An instance of Skydiver.
         """
         for x in self._figure:
-            self._terminal_service.write_text(x)
+            term.write_text(x)
             
 
     def remove_piece(self):
