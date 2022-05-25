@@ -133,3 +133,4 @@ dmypy.json
 
 ### Draw.io backup files
 *.drawio.bkp
+*.drawio.dtmp
