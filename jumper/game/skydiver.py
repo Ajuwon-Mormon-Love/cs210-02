@@ -3,21 +3,32 @@ from game.terminal_service import TerminalService
 class Skydiver:
     """The person in a parachute. 
     
-    The responsibility of Skydiver is to make guesses, keep track of its alive status, and update the
-    drawing relative to the alive status.
+    The responsibility of Skydiver is to display the skydiver in his/her current
+    state, and keep track of how much parachute is left. If none, skydiver dies.
     
     Attributes:
-        _figure (int): The location of the hider (1-1000).
-        _is_dead (boolean): The alive status of the skydiver.
-        _index [list(int)]: The number of guesses remaining for the skydiver (0-4)
-        _guess: (str): The guess a player makes.
+        _is_dead_status (boolean): Whether the jumper is dead.
+        _index (int): An index pointing to each successive piece of parachute to erase.
+        _term (TerminalService): An instance of TerminalService for output.
+        _figure (list[str]): The graphical representation of the skydiver.
+
+    Methods:
+        __init__(self): Constructor method.
+        draw_figure(self): Draws the figure on the screen.
+        remove_piece(self): Removes a piece of the parachute.
+        is_dead(self): Returns a boolean of whether or not the skydiver is dead.
     """
+    
     def __init__(self):
+        """Constructor for Skydiver instance.
         
-        self.is_dead = False
-        self.index = 0
+        Args: 
+            self (Skydiver): An instance of Skydiver.
+        """
+        self._is_dead_status = False
+        self._index = 0
         self._terminal_service = TerminalService()
-        self.figure = [
+        self._figure = [
             ' ___ ',
             '/___\\',
             '\\   /',
@@ -30,35 +41,38 @@ class Skydiver:
         ]
 
     def draw_figure(self):
-        for x in self.figure:
-            self._terminal_service.write_text(x)
-
-
-    def check_status(self, evaluation):
-        evaluation = evaluation
+        """Draws the current state of the skydiver figure.
         
-        if evaluation == True:
-            return
-        else:
-            self.is_dead = self.delete_line()
+        Args: 
+            self (Skydiver): An instance of Skydiver.
+        """
+        for x in self._figure:
+            self._terminal_service.write_text(x)
             
 
-    def delete_line(self):
-        if self.index < 4:
-                self.figure[self.index] = '     '
-                self.is_dead = False
+    def remove_piece(self):
+        """Removes a piece of the parachute.
+        
+        Args: 
+            self (Skydiver): An instance of Skydiver.
+        """
+        if self._index < 4:
+                self._figure[self._index] = '     '
+                self._is_dead_status = False
+                self._index += 1
         else:
-            self.figure[self.index] = '  x  '
-            self.is_dead = True
-            return self.is_dead
-
-        self.index += 1
+            self._figure[self._index] = '  x  '
+            self._is_dead_status = True
 
 
-    def is_dead_status(self):
-        if self.is_dead == True:
-            return True
-        else:
-            return False
-
+    def is_dead(self):
+        """Determines if the skydiver has died.
+        
+        Args: 
+            self (Skydiver): An instance of Skydiver.
+        
+        Returns:
+            boolean - True if dead, False if not.
+        """
+        return self._is_dead_status
     
