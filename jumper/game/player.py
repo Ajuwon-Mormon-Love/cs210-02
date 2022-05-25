@@ -5,7 +5,12 @@ class Player:
     
     Attributes:
         _guess (str): The guessed letter.
-    """
+
+    Methods:
+        __init__(self): A constructor for an instance of Player.
+        set_guess(self, guess): Sets the player's guess to a value.
+        read_guess(self): Returns the player's guess.
+    """ 
 
     def __init__(self):
         """Constructs a new Player.
@@ -15,7 +20,7 @@ class Player:
         """
         self._guess = ""
 
-    def make_guess(self, guess):
+    def set_guess(self, guess):
         """Takes an input and stores it as a guess.
 
         Args:
