@@ -20,7 +20,7 @@ class TerminalService:
             temp_input = input(prompt)
             if not temp_input.isalpha():
                 self.write_text("Invalid input. Please try again.")
-        return input(prompt)
+        return temp_input
 
         
         
