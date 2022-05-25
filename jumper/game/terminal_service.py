@@ -15,16 +15,14 @@ class TerminalService:
         Returns:
             string: The user's input as text.
         """
-        try:
-            if prompt.lower() == 'a'or'b'or'c'or'd'or'e'or'f'or'g'or'h'or'i'or'j'or'k'or'l'or'm'or'n'or'o'or'p'or'q'or'r'or's'or't'or'u'or'v'or'w'or'x'or'y'or'z':
-            # for testing purposes:
-                print('valid input+')
-            # 
-                return input(prompt)
+        temp_input = ''
+        while not temp_input.isalpha():
+            temp_input = input(prompt)
+            if not temp_input.isalpha():
+                self.write_text("Invalid input. Please try again.")
+        return input(prompt)
 
-        except:
-            print('invalid input')
-
+        
         
     def write_text(self, text):
         """Displays the given text on the terminal. 
