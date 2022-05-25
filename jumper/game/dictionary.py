@@ -15,9 +15,7 @@ class Dictionary:
     """
     def __init__(self):
         self._word_list = ['boy', 'mat', 'pen']
-        # self._word_list = ['boy']
         self._mystery_word = self._word_list[random.randint(0, 2)]
-        # self._mystery_word = self._word_list[0]
         self._revealed_letters = ""
         self._evaluation = True
         self._current_letter = ""
